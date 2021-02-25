@@ -1,0 +1,214 @@
+/*imported css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/*commom css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+h1{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  color: var(--fontColor-one);
+}
+span.highlight{
+     color: var(--fontColor-two)
+}
+h5{
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 13px;  
+}
+p{
+    color: #626067;
+}
+
+button{
+   border: none;
+   padding: 6px 25px;
+    border-radius: 40px;
+    background: white;
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,.3)
+}
+button:focus{
+    outline: none;
+}
+/*css variables*/
+
+:root{
+    --main-bg : #f1f4f9;
+    --second-bg : #9d9ca2;
+    --text-color : #abd9e4;
+    --fontColor-one : #261c3f;
+    --fontColor-two : #ef9a25;
+}
+
+/*Button*/
+.common-btn{
+    text-decoration: none;
+    background: var(--fontColor-two);
+    color : white;
+    padding: 16px 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: none;
+    -webkit-transition:  ease 2s;
+    -moz-transition:  ease 2s;
+    -o-transition:  ease 2s;
+    transition:  ease 2s;
+}
+.common-btn:hover{
+    margin-bottom: 5px;
+    color: white;
+   box-shadow: 1px 5px 13px 1px rgba(0,0,0,0.58);
+-webkit-box-shadow: 1px 5px 13px 1px rgba(0,0,0,0.58);
+-moz-box-shadow: 1px 5px 13px 1px rgba(0,0,0,0.58);
+}
+
+/*Navber part start*/
+
+header{
+    background: var(--main-bg)
+}
+.navbar-nav a{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 18px;
+    color: var(--fontColor-one)
+    -webkit-transition: color 2s;
+    -moz-transition: color 2s;
+    -o-transition: color 2s;
+    transition: color 2s;
+}
+.navbar-nav a:hover{
+   color: var(--fontColor-two) 
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    line-height: 82px;
+}
+.navber-btn a{
+    text-decoration: none;
+}
+/*navber part end*/
+
+.home-banner{
+    padding: 120px 0;
+    background: var(--main-bg);
+}
+
+.home-content h1{
+    margin-bottom: 25px;
+}
+@media only screen and (max-width : 765px){
+   .home-banner{
+    padding: 120px 0;
+    background: red;
+} 
+}
+.home-content .home-btn{
+    margin-top: 25px;
+}
+.home-content .home-btn a{
+    text-decoration: none;
+}
+.banner-img img{
+    width: 90%;
+}
+.banner-img{
+    margin-top: -25px;
+}
+/*Navber part endt*/
+/*about part start*/
+
+.about-part{
+    padding: 120px 0px;
+    background: var(--main-bg)
+}
+.about-details p{
+    margin-bottom: 30px;
+}
+.about-details h1{
+    margin-bottom: 20px;
+}
+.about-details .about-btn a{
+    text-decoration: none;
+}
+/*about part end*/
+/*service part start*/
+
+.service-part{
+    padding: 120px 0;
+    background: var(--main-bg);
+}
+.service-head{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.service-head h1{
+    padding: 0 145px;
+}
+
+.service-cards{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 3fr));
+    cursor: pointer;
+    justify-content: center;
+}
+.service-cards .service-card{
+    padding: 45px 35px;
+    text-align: left;
+    background: #ffffff;
+    z-index: 9999;
+    position: relative;
+    border: 1px solid #eddddd;
+/*    box-shadow: 0 20px 30px 0 rgba(0,0,0,.3)*/
+}
+.service-cards .service-card .service-number{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+.service-cards .service-card .service-number h3{
+    font-size: 70px;
+    font-weight: 800;
+    opacity: .2;
+}
+.service-btn a{
+    padding: 6px 25px !important;
+    border-radius: 40px;
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,.3);
+    text-decoration: none;
+    background: var(--fontColor-two);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.service-card .service-icon span{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.service-card .service-icon span:before{
+    margin: 0;
+    font-size: 45px;
+/*    background: -webkit-linear-gradient();*/
+    color: var(--fontColor-two);
+}
+/*service part end*/
+
+
+
+
